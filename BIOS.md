@@ -10,14 +10,15 @@
 
 #### BIOS启动过程
   - Legacy BIOS启动过程
-    > <small>初始化--->开机自检--->记录计算机系统的配置--->提供中断服务--->启动操作系</small>
-    > <small>始化：CPU初始化，执行BIOS程序。</small>
-    > <small>开机自检：POST</small>
+    > <small>初始化--->开机自检--->记录计算机系统的配置--->提供中断服务--->启动操作系</small>  
+    > <small>初始化：CPU初始化，执行BIOS程序。</small>  
+    > <small>开机自检：POST,对各种硬件如CPU、RAM、键盘、鼠标等进行检测</small>
+    > <small></small>  
   - UEFI BIOS启动过程
-    > <small>SEC--->PEI--->DXE--->BDS--->TSL--->RT--->AL</small>
-    > <small>SEC：安全性，通电，内存初始化，CPU只能使用Cache来验证CPU、芯片组和主机驱动。</small>
-    > <small>PEI：EFI前初始化，初始化一小部分低地址内存空间，CPU开始使用此内存初始化CPU、芯片组和主板，随后EFI驱动载入内存。</small>
-    > <small>DXE：驱动执行环境，此阶段CPU、内存、PCI、USB、SATAheShell都会被初始化。</small>
-    > <small>BDS：开机设备选择，此阶段用户可以从检测到的启动设备中选择启动设备。</small>
-    > <small>TSL：临时系统载入，此阶段将由启动设备上的系统接手正式进入操作系统，若BDS阶段选择UEFI Shell则会进入简单命令行阶段。
+    > <small>SEC--->PEI--->DXE--->BDS--->TSL--->RT--->AL</small>  
+    > <small>SEC：安全性，通电，内存初始化，CPU只能使用Cache来验证CPU、芯片组和主机驱动。</small>  
+    > <small>PEI：EFI前初始化，初始化一小部分低地址内存空间，CPU开始使用此内存初始化CPU、芯片组和主板，随后EFI驱动载入内存。</small>  
+    > <small>DXE：驱动执行环境，此阶段CPU、内存、PCI、USB、SATAheShell都会被初始化。</small>  
+    > <small>BDS：开机设备选择，此阶段用户可以从检测到的启动设备中选择启动设备。</small>  
+    > <small>TSL：临时系统载入，此阶段将由启动设备上的系统接手正式进入操作系统，若BDS阶段选择UEFI Shell则会进入简单命令行阶段。  
   
