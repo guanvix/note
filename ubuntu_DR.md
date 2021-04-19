@@ -17,7 +17,7 @@
 
     
 
-  - 执行如下命令
+  - 执行如下命令    
     ` modprobe scsi_transport_sas`
     ` modprobe raid_class`
     ` modprobe configfs`
