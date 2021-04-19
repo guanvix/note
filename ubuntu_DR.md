@@ -17,11 +17,11 @@
 
     
 
-  - 执行如下命令    
-    ` modprobe scsi_transport_sas`
-    ` modprobe raid_class`
-    ` modprobe configfs`
-    ` insmod  megarai_sas.ko` 
+  - 执行如下命令
+    `modprobe scsi_transport_sas`
+    `modprobe raid_class`
+    `modprobe configfs`
+    `insmod  megarai_sas.ko` 
   > <small>最后一条命令需注意ko文件的位置</small>
   > <small>执行完此操作后Ctrl+F1返回安装界面，然后选择正确的驱动名称可能就可以安装系统了</small>
 
