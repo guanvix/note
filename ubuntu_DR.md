@@ -19,22 +19,24 @@
 
   - 执行如下命令 
     
-    ```shell
+    ```
     modprobe scsi_transport_sas
     modprobe raid_class
     modprobe configfs
     insmod  megarai_sas.ko #注意ko文件的位置
-  ```
+    ```
     
-  
+    
   > <small>执行完此操作后Ctrl+F1返回安装界面，然后选择正确的驱动名称可能就可以安装系统了</small>
+
   
+
   - 特别注意： 当出现下图界面切记 **不要回车**  `Continue`   
-  
-    <img src="picture/no_click.PNG" style="zoom:80%;" />
-  
-  -  
-  
+
+    ![](picture/no_click.PNG)
+
+    
+
 - 安装驱动到系统
 
   - Ctrl+F2进入命令行
@@ -49,7 +51,7 @@
 
   - 配置apt源、代理，安装dkms及驱动
 
-  - 安装成功后Ctrl+F1返回安装界面并点击`Continue`重启
+  - 安装成功后Ctrl+F1返回安装界面并回车`Continue`重启
 
 
 
