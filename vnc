@@ -1,0 +1,8 @@
+[Service]
+Type=forking
+User=test
+Group=test
+WorkingDirectory=/home/test
+ExecStart=/usr/bin/vncserver -geometry 1280x1024 :%i
+ExecStop=/usr/bin/vncserver -kill :%i
+PIDFile=/home/test/.vnc/%H%i.pid
